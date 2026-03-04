@@ -38,7 +38,7 @@ N_THREADS ?= $(shell nproc)
 DEBUG_OBJECTS ?= 0
 # Set prefix to mips binutils binaries (mips-linux-gnu-ld => 'mips-linux-gnu-') - Change at your own risk!
 # In nearly all cases, not having 'mips-linux-gnu-*' binaries on the PATH indicates missing dependencies.
-MIPS_BINUTILS_PREFIX ?= mips-linux-gnu-
+MIPS_BINUTILS_PREFIX ?= mips64-linux-gnu-
 # Emulator w/ flags for 'make run'.
 N64_EMULATOR ?=
 # Set to override game region in the ROM header (options: JP, US, EU). This can be used to build a fake US version
