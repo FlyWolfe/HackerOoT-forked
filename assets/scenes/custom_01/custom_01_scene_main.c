@@ -27,7 +27,7 @@ ActorEntry custom_01_scene_header00_playerEntryList[] = {
     // Link / Spawn point
     {
         /* Actor ID   */ ACTOR_PLAYER,
-        /* Position   */ { 0, -120, 0 },
+        /* Position   */ { 0, -76, 0 },
         /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
         /* Parameters */ (0x0)
     },

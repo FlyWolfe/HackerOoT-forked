@@ -30,11 +30,11 @@ Gfx custom_01_room_0_dl_Floor_mesh_layer_Opaque_tri_0[] = {
 };
 
 Gfx mat_custom_01_room_0_dl_floor_mat_layerOpaque[] = {
-	gsSPLoadGeometryMode(G_LIGHTING | G_SHADING_SMOOTH | G_ZBUFFER | G_CULL_BACK | G_FOG | G_SHADE),
+	gsSPLoadGeometryMode(G_ZBUFFER | G_SHADE | G_CULL_BACK | G_SHADING_SMOOTH | G_FOG | G_LIGHTING),
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(0, 0, 0, SHADE, 0, 0, 0, 1, COMBINED, 0, PRIMITIVE, 0, 0, 0, 0, COMBINED),
-	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_CK_NONE | G_TT_NONE | G_TP_PERSP | G_TD_CLAMP | G_CYC_2CYCLE | G_TF_BILERP | G_CD_MAGICSQ | G_PM_NPRIMITIVE | G_TL_TILE | G_AD_NOISE | G_TC_FILT),
-	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_ZS_PIXEL | G_AC_NONE | G_RM_AA_ZB_OPA_SURF2 | G_RM_FOG_SHADE_A),
+	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_CYC_2CYCLE | G_AD_NOISE | G_TD_CLAMP | G_CK_NONE | G_TL_TILE | G_PM_NPRIMITIVE | G_TF_BILERP | G_CD_MAGICSQ | G_TT_NONE | G_TC_FILT | G_TP_PERSP),
+	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_AC_NONE | G_ZS_PIXEL | G_RM_AA_ZB_OPA_SURF2 | G_RM_FOG_SHADE_A),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetPrimColor(0, 0, 255, 111, 96, 255),
 	gsSPEndDisplayList(),
