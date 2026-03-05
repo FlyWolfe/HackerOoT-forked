@@ -5147,6 +5147,25 @@ beginseg
     number 3
 endseg
 #endif
+//--------------- TEST_SCENE
+beginseg
+    name "custom_01_scene"
+    compress
+    romalign 0x1000
+    include "$(BUILD_DIR)/assets/scenes/custom_01/custom_01_scene_main.o"
+    include "$(BUILD_DIR)/assets/scenes/custom_01/custom_01_scene_col.o"
+    number 2
+endseg
+
+beginseg
+    name "custom_01_room_0"
+    compress
+    romalign 0x1000
+    include "$(BUILD_DIR)/assets/scenes/custom_01/custom_01_room_0_main.o"
+    include "$(BUILD_DIR)/assets/scenes/custom_01/custom_01_room_0_model_info.o"
+    include "$(BUILD_DIR)/assets/scenes/custom_01/custom_01_room_0_model.o"
+    number 3
+endseg
 
 #if TESTSUITE_MODE
 #include "testsuite.inc"
