@@ -3,7 +3,7 @@
 /**
  * Header Child Day (Default)
 */
-#define LENGTH_CUSTOM_01_ROOM_0_HEADER00_ACTORLIST 1
+#define LENGTH_CUSTOM_01_ROOM_0_HEADER00_ACTORLIST 2
 SceneCmd custom_01_room_0_header00[] = {
     SCENE_CMD_ROOM_SHAPE(&custom_01_room_0_shapeHeader),
     SCENE_CMD_ECHO_SETTINGS(0x00),
@@ -15,6 +15,14 @@ SceneCmd custom_01_room_0_header00[] = {
 };
 
 ActorEntry custom_01_room_0_header00_actorList[LENGTH_CUSTOM_01_ROOM_0_HEADER00_ACTORLIST] = {
+    // Breakable Pot
+    {
+        /* Actor ID   */ ACTOR_OBJ_TSUBO,
+        /* Position   */ { 0, -120, 102 },
+        /* Rotation   */ { DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000), DEG_TO_BINANG(0.000) },
+        /* Parameters */ (0x0 | (0x13 & 0x001F) | 0)
+    },
+
     // Link / Spawn point
     {
         /* Actor ID   */ ACTOR_PLAYER,

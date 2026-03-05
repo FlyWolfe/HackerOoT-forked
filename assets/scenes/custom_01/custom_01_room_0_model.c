@@ -36,7 +36,7 @@ Gfx mat_custom_01_room_0_dl_floor_mat_layerOpaque[] = {
 	gsSPSetOtherMode(G_SETOTHERMODE_H, 4, 20, G_CK_NONE | G_TT_NONE | G_TP_PERSP | G_TD_CLAMP | G_CYC_2CYCLE | G_TF_BILERP | G_CD_MAGICSQ | G_PM_NPRIMITIVE | G_TL_TILE | G_AD_NOISE | G_TC_FILT),
 	gsSPSetOtherMode(G_SETOTHERMODE_L, 0, 32, G_ZS_PIXEL | G_AC_NONE | G_RM_AA_ZB_OPA_SURF2 | G_RM_FOG_SHADE_A),
 	gsSPTexture(65535, 65535, 0, 0, 1),
-	gsDPSetPrimColor(0, 0, 255, 255, 255, 255),
+	gsDPSetPrimColor(0, 0, 255, 111, 96, 255),
 	gsSPEndDisplayList(),
 };
 
